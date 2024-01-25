@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>Homepage for Restaurant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Home Page for Restaurant</title>
+        <style>
+            body{
+                background-color: burlywood;
+            }
+            
+            h1{
+                font-size :50px;
+                text-align: center;
+            }
+            h2{
+                font-size:25px;
+             }
+            p{
+                font-weight:bold;
+                text-align: center;
+            }
+             #veg li::before{
+                content:url("./veglogo.png");
+
+             }
+             
+             #veg li{
+                list-style-type: none;
+                font-size:20px;
+             }
+             #non-veg li::before{
+                content: url("./nonveg.png");
+             }
+             #non-veg li{
+                list-style-type:none;
+                font-size:20px;
+             }
+            
+             #order{
+                background-color:lightcoral;
+                padding:30px;
+                width:500px;
+                transition-property: all;
+                transition-duration:4s;
+             } 
+             #order:hover{
+                background-color:darkmagenta;
+                width:100px;
+                height:40px;
+             }
+             a{
+                margin-left:10px;
+                text-decoration: none;
+             }
+             a:hover{
+                background-color:white;
+             }
+             .Query{
+                background-color: gray;
+                position: sticky;
+                padding:20px;
+                top:0px;
+                bottom:4px;
+} 
+        </style>
+    </head>
+    <body>
+        <div style="background-color:gray; padding:10px;">
+            <a href="#Home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#Contacts">Contacts</a>
+            <a href="#Query">Comments</a>
+
+        </div>
+        <div id="Home">
+        <h1>RSV Restaurant&nbsp;<img src="./logo.png" width="90"; height="80";></h1>
+        <marquee style="color:purple;font-weight:bolder;"><q>Eat and Enjoy your Favourite Meal!!!!!</q></marquee>
+        <br>
+         <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLyXd1LiugU13bhgtQJMMocfhYyz5NPF040w&usqp=CAU"></center>
+        </div>
+        <div id="menu">
+         <div id="veg"> 
+        <h2>Veg :</h2>
+        <ul>
+            <li>Paneer Pulao</li>
+            <li>Tomato Rice</li>
+            <li>Curd Rice</li>
+            <li>Gobi Rice</li>
+            <li>Veg Biryani</li>
+            <li>Veg meals</li>
+            </ul>
+           </div> 
+        <div id="non-veg">
+        <h2>Non-Veg:</h2>
+        <ul>
+            <li>Chicken Biryani</li>
+            <li>Mutton Curry</li>
+            <li>Egg Noodles</li>
+            <li> Chicken Fried Rice</li>
+            <li>Prawn Fry</li>
+            <li>Fish Curry</li>
+            </ul>
+            </div>
+         </div> 
+         <div class="Query">
+            <input type="text" placeholder="Any queries">
+            <input type="button" id="button" value="Submit">
+        </div>  
+        <div id="Contacts">
+            <h2>Location details:</h2>
+            &nbsp;&nbsp;<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30451.332485802093!2d78.51850858606952!3d17.439765332368676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99adcdf79a2b%3A0xaf0d725689e2dc7e!2sAl%20Arab%20The%20Mandi%20House!5e0!3m2!1sen!2sin!4v1706165951637!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="200";height="300"></iframe>
+        </div>
+        <br><br>
+       
+        <div id="order">
+        <p>Contact us at:<a href="tel:+123456789">+91 56478020832</a></p>
+        <p>Order Now! 50% off</p>
+    </div>
+    
+    </body>
+</html>
